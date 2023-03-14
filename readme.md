@@ -1,6 +1,6 @@
 # readme
 
-yjl，yzy @ RenGroup 2023/3/14修改（劳烦后来维护者检查更新软件安装包到最新版本）
+yjl，yzy @ RenGroup 2023/3/14修改
 
 bibtex4word的官方网站：<http://www.ee.ic.ac.uk/hp/staff/dmb/perl/index.html> 
 
@@ -8,7 +8,7 @@ bibtex4word的官方网站：<http://www.ee.ic.ac.uk/hp/staff/dmb/perl/index.htm
 
 安装使用bibtex4word需要三种软件。
 
-第一种是reference manager软件（不必需），作用是用来下载、管理文章及其bibtex格式的引文，最著名的软件应该是endnote，bibtex4word的作者强烈推荐JabRef，JabRef的安装包也在本文件夹中提供，可选择性使用。
+第一种是reference manager软件（不必需），作用是用来下载、管理文章及其bibtex格式的引文，最著名的软件应该是endnote，bibtex4word的作者强烈推荐JabRef，可选择性使用。
 
 第二种是文本编辑管理系统软件，以下简称为tex软件（因为这类软件名称中一般带有tex），作者推荐使用Miktex，最新安装包提供在本文件夹中。官网地址：<https://miktex.org/> 
 
@@ -16,7 +16,7 @@ bibtex4word的官方网站：<http://www.ee.ic.ac.uk/hp/staff/dmb/perl/index.htm
 
 ## Miktex安装
 
-运行Miktex安装包，连续点击“下一步”安装即可。
+在官网上下载安装包，<https://miktex.org/> ，运行Miktex安装包，连续点击“下一步”安装即可。
 
 不推荐为全部用户安装此软件，建议只为自己安装此软件。虽然个人电脑一般也不会有其它用户使用，但为全部用户安装可能会出现一些不好解决的问题。
 
