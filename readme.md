@@ -95,6 +95,7 @@ You can verify that style xxx is visible to MikTex by typing "kpsewhich xxx.bst"
 
 如果.bst样式不符合要求，可以通过改其内容进行设置。比如在biograph显示article title
 
+``` bst
 FUNCTION {format.title}
 { title 
 duplicate$ empty$ 'skip$
@@ -102,5 +103,6 @@ duplicate$ empty$ 'skip$
   if$
 %  "title" bibinfo.check
 }
+```
 
 其中，%表示注释该行。
