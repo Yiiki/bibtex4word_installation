@@ -75,9 +75,11 @@ https\://tex.stackexchange.com/questions/325302/running-bibtex4word-with-office-
 这个错误可能是由于使用多个tex软件时的冲突导致。一种解决方法是卸载之前使用过的tex软件，如texlive等，并删除相关的环境变量。另外也有可能是使用的style所需的宏没有被正确安装，参考官网上的error messages可以解决。
 
 ## update in Oct28,2024
-添加新样式方法，You can verify that style xxx is visible to MikTex by typing "kpsewhich xxx.bst" from a command window.
+添加新样式方法，You can verify that style xxx is visible to MikTex by typing "kpsewhich xxx.bst" from a command window. 该命令行可以直接在MikTeX console客户端界面上找到。
 
-请参考下述方法：
+通过运行上述命令获得bst文件存储文件夹，以后直接把找到/编辑好的bst文件拖进来，**然后在客户端“任务”--》“更新文件名数据库” （所有更新字样的都可以点一遍）**，这样就可以告诉MiKTeX你加入了新的样式文件；如果更改内容，则保存后，不用再点更新，直接在word里开用。
+
+除此以外，还可参考下述方法：
 
 Error Messages
 
