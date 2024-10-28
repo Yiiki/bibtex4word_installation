@@ -76,10 +76,31 @@ https\://tex.stackexchange.com/questions/325302/running-bibtex4word-with-office-
 
 ## update in Oct28,2024
 添加新样式方法，You can verify that style xxx is visible to MikTex by typing "kpsewhich xxx.bst" from a command window.
+
 请参考下述方法：
+
 Error Messages
+
 Bibtex was unable to find style: xxx (or "Empty BBL file: ...") 
+
 This error may mean that the requested BibTeX style is not installed in MikTex. To install it, see "Error Messages: Bibtex was unable to find style: xxx " above."
+
 The style "xxx" was not available. This means that the style is either (a) spelled incorrectly or else (b) that has not been installed in Miktex. To solve the latter cause, open the MiKTeX package manager (Programs->MiKTeX v.v->Browse Packages), type "xxx.bst" in the "Filename:" box and click "Filter". If the package has not yet been installed, the column headed "Installed on" will be blank; right click the package and select "Install". You may need to select the server to download from by selecting Repository->Change Repository: select "Packages shall be installed from the Internet", click "next" and then select a nearby server. It is possible to set an option so that MiKTeX downloads any missing packages automatically, but I do not recommend this because it will get stuck for ever if the server is not working.
+
 If you create a new style, you need to run texhash from a command window in order to update BibTeX's list of files. You can ulso update it by following: Programs-> MikTex 2.x-> Maintenance(Admin)-> Settings(Admin) and then clicking on "Refresh FNDB".
+
 You can verify that style xxx is visible to MikTex by typing "kpsewhich xxx.bst" from a command window.
+
+## work with .bst file
+
+如果.bst样式不符合要求，可以通过改其内容进行设置。比如在biograph显示article title
+
+FUNCTION {format.title}
+{ title 
+duplicate$ empty$ 'skip$
+    { "t" change.case$ }
+  if$
+%  "title" bibinfo.check
+}
+
+其中，%表示注释该行。
